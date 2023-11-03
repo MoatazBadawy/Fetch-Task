@@ -9,5 +9,6 @@ class GetFetchItemsUseCse @Inject constructor(
 ) {
     suspend operator fun invoke(): List<Fetch> {
         return fetchRepository.getFetchItems()
+            .filter { it.name.isNotEmpty() }
     }
 }
