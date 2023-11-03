@@ -11,6 +11,7 @@ class GetFetchItemsUseCse @Inject constructor(
         return fetchRepository.getFetchItems()
             .filter { it.name.isNotEmpty() }
             .groupBy { it.listId }.toSortedMap()
+            .mapValues { it.value.sortedBy { fetch -> fetch.name } }
             .flatMap { it.value }
     }
 }
