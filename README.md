@@ -16,14 +16,13 @@ https://github-production-user-asset-6210df.s3.amazonaws.com/63272288/280412503-
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 21
-- [Kotlin](https://kotlinlang.org/) based, [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/) for asynchronous.
+- [Kotlin](https://kotlinlang.org/) based, [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) for asynchronous.
 - Jetpack
   - Lifecycle: Observe Android lifecycles and handle UI states upon the lifecycle changes.
   - ViewModel: Manages UI-related data holder and lifecycle awareness. Allows data to survive configuration changes such as screen rotations.
   - StateFlow: For reactive style programming (from VM to UI). 
   - DataBinding: Binds UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
   - [Hilt](https://dagger.dev/hilt/): for dependency injection.
-  - [Navigation](https://developer.android.com/guide/navigation/navigation-getting-started) - Used to navigate between fragments
   - [Material-Components](https://github.com/material-components/material-components-android) - Material design components like ripple animation, cardView.
 - Architecture
   - Clean Architecture (Data - Domain - UI)
