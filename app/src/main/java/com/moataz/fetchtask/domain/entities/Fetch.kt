@@ -1,7 +1,7 @@
 package com.moataz.fetchtask.domain.entities
 
 data class Fetch(
-    val id: Long,
-    val listId: Int,
-    val name: String,
+    val id: Long = 0,
+    val listId: Int = 0,
+    val name: String = "",
 )
