@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -34,6 +35,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "17"
+    }
+    kapt {
+        generateStubs = true
     }
     dataBinding.enable = true
 }
